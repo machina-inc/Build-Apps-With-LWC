@@ -14,7 +14,8 @@
                 <lightning-layout multiple-rows="true" pull-to-boundary="small">
 					<template for:each={bears.data} for:item="bear">
 						<lightning-layout-item key={bear.Id} size="3" class="slds-var-p-around_x-small">
-							<!-- Start bear tile -->
+							<c-bear-tile bear={bear} onbearview={handleBearView}></c-bear-tile>
+							<!-- Start bear tile >
 							<lightning-card title={bear.Name} class="bear-tile">
 								<div class="slds-var-p-horizontal_small bear-tile-body">
 									<div class="slds-media">
@@ -30,7 +31,7 @@
 									</div>
 								</div>
 							</lightning-card>
-							<!-- End bear tile -->
+							< End bear tile -->
 						</lightning-layout-item>
 					</template>
 				</lightning-layout>
